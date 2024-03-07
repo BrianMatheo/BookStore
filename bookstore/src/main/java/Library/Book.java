@@ -11,6 +11,7 @@ public class Book {
         String loandate;
         String returndate;
         
+        
         public Book(String title, String author, String genre, String datepublic, char available, int quantity, int loantime, String user, String loandate, String returndate) {
             this.title = title;
             this.author = author;
@@ -38,6 +39,10 @@ public class Book {
         
         public void Available(){
             System.out.println("el libro " + this.title + " tiene disponibilidad: " + this.available);
+        }
+        
+        public void Search(){
+            
         }
         
         public void Information(){
