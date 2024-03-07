@@ -1,4 +1,3 @@
-
 package Library;
 public class Book {
         String title;
@@ -25,17 +24,34 @@ public class Book {
             this.returndate = returndate;
         }
 
+        public void Quantity(){
+            System.out.println("Cantidad disponible: " + this.quantity);
+        }
+        
+        public void Title(){
+            System.out.println(this.title);
+        }
+        
+        public void User(){
+            System.out.println("el usuario " + this.user + " está usando el libro " + this.title + " desde el día: " + this.loandate);
+        }
+        
+        public void Available(){
+            System.out.println("el libro " + this.title + " tiene disponibilidad: " + this.available);
+        }
+        
         public void Information(){
             System.out.println("The title is: " + this.title);
-            System.out.println( "The author of the book is: "+ this.author);
+            System.out.println("The author of the book is: "+ this.author);
             System.out.println("the genre of the literary work is: " + this.genre);
             System.out.println("The publication date of the book is: " + this.datepub);
             System.out.println("Are there books available? " + this.available);
             System.out.println("How many books are there? " + this.quantity);
             System.out.println("The loan time (in days) is: " + this.loantime);
-            System.out.println("The user is:" + this.user);
-            System.out.println("The loan date:" + this.loandate);
+            System.out.println("The user is: " + this.user);
+            System.out.println("The loan date: " + this.loandate);
             System.out.println("The return date: " + this.returndate);
+            System.out.println(" ");
             
         }
         
